@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Webstore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <style type="text/css">
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('https://img.freepik.com/free-photo/view-archeological-underwater-building-ruins_23-2150886912.jpg?w=360&t=st=1729170452~exp=1729171052~hmac=005ddb62b09dd2a4fa50f65d60e0ae5f0c14971e46187b7d164572e46f4c9d9a');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    font-family: "Rowdies", sans-serif
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.rowdies-regular {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-color: #89937C;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.product:hover {
+    transform: scale(1.1);
+}
+
+.product-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.product-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.buy-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #218838;
+    transform: scale(1.2);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            		<li class="Rivfish"><h1>Rivfish</h1></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <h1>Our Products</h1>
+            <ul class="product-grid">
+                <li class="product">
+                    <div class="product-img">
+                        <img src="https://img.freepik.com/premium-photo/alligator-gar-fish-underwater-close-up-macro_850000-7561.jpg" alt="Product 1">
+                    </div>
+                    <h2>Alligator Gar</h2>
+                    <p class="price">$99.99</p>
+                    <button class="buy-btn">Buy Now</button>
+                </li>
+                <li class="product">
+                    <div class="product-img">
+                        <img src="https://home.adelphi.edu/~ve21375/betta%20fish%20home%201.jpg" alt="Product 2">
+                    </div>
+                    <h2>Betta Fish</h2>
+                    <p class="price">$5.99</p>
+                    <button class="buy-btn">Buy Now</button>
+                </li>
+                <li class="product">
+                    <div class="product-img">
+                        <img src="https://tm.americancatfishingassociation.com/usr/img/channel_catfish_swimming2-450px_15335193.jpg" alt="Product 3">
+                    </div>
+                    <h2>Channel Catfish</h2>
+                    <p class="price">$20</p>
+                    <button class="buy-btn">Buy Now</button>
+                </li>
+                <li class="product">
+                    <div class="product-img">
+                        <img src="https://www.aquariumsource.com/wp-content/uploads/2019/09/cory-catfish.jpg" alt="Product 4">
+                    </div>
+                    <h2>Corydoras Catfish</h2>
+                    <p class="price">$29.99</p>
+                    <button class="buy-btn">Buy Now</button>
+                </li>
+                <li class="product">
+                    <div class="product-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Astronotus_ocellatus.jpg/1200px-Astronotus_ocellatus.jpg" alt="Product 5">
+                    </div>
+                    <h2>Oscar Cichlid</h2>
+                    <p class="price">$50</p>
+                    <button class="buy-btn">Buy Now</button>
+                </li>
+                <li class="product">
+                    <div class="product-img">
+                        <img src="https://avidaquarist.com/wp-content/uploads/2022/05/Ram-Cichlid.jpg" alt="Product 6">
+                    </div>
+                    <h2>Ram Cichlid</h2>
+                    <p class="price">$10</p>
+                    <button class="buy-btn">Buy Now</button>
+                </li>
+                <li class="product">
+                    <div class="product-img">
+                        <img src="https://www.thesprucepets.com/thmb/3MjSoLm2IlGRNf5Ib7-Kbn0e_MM=/1500x0/filters:no_upscale():strip_icc()/weather-loach-599ddc400d327a0011ce2222.jpg" alt="Product 7">
+                    </div>
+                    <h2>Weather Loach</h2>
+                    <p class="price">$40</p>
+                    <button class="buy-btn">Buy Now</button>
+                </li>
+                <li class="product">
+                    <div class="product-img">
+                        <img src="https://www.thesprucepets.com/thmb/InY3TyLjpawOreZ2w0dkJ7QmJGE=/4040x0/filters:no_upscale():strip_icc()/cardinal-tetra-1378417-hero-485f0034557a4a67bb0b63cea50ac917.jpg" alt="Product 8">
+                    </div>
+                    <h2>Cardinal Tetra(10x)</h2>
+                    <p class="price">$40</p>
+                    <button class="buy-btn">Buy Now</button>
+                </li>
+                <li class="product">
+                    <div class="product-img">
+                        <img src="https://www.thesprucepets.com/thmb/UXuU3FvlTn3N1tEZcjuJhuhPIMg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/swordtail-fish-species-profile-5078361-01-467f7fbdfedb4e458ad3204b15f23534.jpg" alt="Product 9">
+                    </div>
+                    <h2>Swordtail Fish</h2>
+                    <p class="price">$5</p>
+                    <button class="buy-btn">Buy Now</button>
+                </li>
+                <li class="product">
+                    <div class="product-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmYM4CswOGDA0edZFOMse9K3PR3BYE_FTGCA&s" alt="Product 10">
+                    </div>
+                    <h2>Lawnmower Blenny</h2>
+                    <p class="price">$7</p>
+                    <button class="buy-btn">Buy Now</button>
+                </li>
+                <li class="product">
+                    <div class="product-img">
+                        <img src="https://static.wixstatic.com/media/a24a53_5f8fb1ceb1cf4d05ae99733fe5667955~mv2.jpg/v1/fill/w_799,h_600,al_c,q_85,enc_auto/a24a53_5f8fb1ceb1cf4d05ae99733fe5667955~mv2.jpg" alt="Product 11">
+                    </div>
+                    <h2>Striped Raphael Catfish</h2>
+                    <p class="price">$10</p>
+                    <button class="buy-btn">Buy Now</button>
+                </li>
+                <li class="product">
+                    <div class="product-img">
+                        <img src="https://www.thesprucepets.com/thmb/j7t7Wxb1_WxT-BKSu7z6sWo-faM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Puntius_denisonii_Stan_Shebs-56a32fbd5f9b58b7d0d0df45.jpg" alt="Product 12">
+                    </div>
+                    <h2>Denison Barb</h2>
+                    <p class="price">$8</p>
+                    <button class="buy-btn">Buy Now</button>
+                </li>
+
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>2024 Rivfish. All rights reserved.</p>
+    </footer>
+</body>
+</html>
